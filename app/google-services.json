@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "16451098759",
+    "firebase_url": "https://my-amihelp.firebaseio.com",
+    "project_id": "my-amihelp",
+    "storage_bucket": "my-amihelp.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:16451098759:android:848fbe8b040ce690134022",
+        "android_client_info": {
+          "package_name": "com.anamangga.myamihelp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "16451098759-dftpauiss8o2scnh22fmeqhl3i3bjuvd.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.anamangga.myamihelp",
+            "certificate_hash": "ab7ee05ac8117081a86677aa34f2c5c3efbd108d"
+          }
+        },
+        {
+          "client_id": "16451098759-s3o2tdpd2u7phkoc59kcsi4o61t75lig.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyArTUgDi2ZTZHG1NP8ol8cweS8jxMFs_jk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "16451098759-s3o2tdpd2u7phkoc59kcsi4o61t75lig.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

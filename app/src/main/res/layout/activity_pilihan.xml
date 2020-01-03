@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/putih"
+    tools:context=".PilihanActivity">
+
+
+
+    <ImageView
+        android:id="@+id/iamge_pilihan"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/background"
+
+        />
+
+
+
+
+
+        <com.google.android.material.textview.MaterialTextView
+            android:layout_width="wrap_content"
+            android:id="@+id/selamat"
+            android:layout_height="wrap_content"
+            android:text="Selamat Pagi"
+            android:textColor="#fff"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            android:layout_alignParentTop="true"
+            />
+
+
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/profil"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:layout_marginTop="15dp"
+        android:layout_below="@id/selamat"
+        android:layout_marginEnd="50dp"
+        android:layout_marginStart="50dp"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="6dp"
+        android:backgroundTint="@color/putih"
+        >
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="5dp"
+            >
+
+
+            <ImageView
+                android:id="@+id/profileImage"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:src="@drawable/account"/>
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/namaKu"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/profileImage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Muhammad Khoirul Anam"
+                android:textStyle="bold"/>
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/nimKu"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="17.11.1384"
+                android:textStyle="bold"/>
+
+        </LinearLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+
+
+<ScrollView
+    android:layout_below="@id/profil"
+    android:layout_marginTop="15dp"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+
+<RelativeLayout
+
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+
+   <com.google.android.material.card.MaterialCardView
+       android:layout_marginStart="40dp"
+       android:layout_marginEnd="40dp"
+       android:layout_marginTop="15dp"
+       android:id="@+id/btn_kritikSaran"
+       android:backgroundTint="@color/putih"
+       android:layout_width="match_parent"
+       android:layout_height="120dp"
+       app:cardCornerRadius="20dp"
+       app:cardElevation="6dp"
+
+       >
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:orientation="vertical"
+           android:gravity="center">
+
+           <ImageView
+               android:layout_width="80dp"
+               android:layout_height="80dp"
+               android:src="@drawable/ic_kritiksaran"
+               android:layout_marginBottom="5dp"
+               />
+
+       <androidx.appcompat.widget.AppCompatTextView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="KRITIK DAN SARAN"
+           android:textStyle="bold"
+           android:layout_gravity="center"
+           android:textColor="@color/biru"
+           />
+
+       </LinearLayout>
+   </com.google.android.material.card.MaterialCardView>
+
+
+   <com.google.android.material.card.MaterialCardView
+       android:layout_marginStart="40dp"
+       android:layout_marginEnd="40dp"
+       android:layout_marginTop="30dp"
+       android:layout_marginBottom="30dp"
+       android:id="@+id/btn_bantuan"
+       android:layout_below="@id/btn_kritikSaran"
+       android:backgroundTint="@color/putih"
+       android:layout_width="match_parent"
+       android:layout_height="120dp"
+       app:cardCornerRadius="20dp"
+       app:cardElevation="6dp"
+       >
+
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:orientation="vertical"
+           android:gravity="center">
+
+       <ImageView
+           android:layout_width="80dp"
+           android:layout_height="80dp"
+           android:src="@drawable/ic_bantuan"
+           />
+
+       <androidx.appcompat.widget.AppCompatTextView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="BANTUAN"
+           android:textStyle="bold"
+           android:layout_gravity="center"
+           android:textColor="@color/biru"
+           />
+       </LinearLayout>
+   </com.google.android.material.card.MaterialCardView>
+
+
+
+
+</RelativeLayout>
+</ScrollView>
+</RelativeLayout>
