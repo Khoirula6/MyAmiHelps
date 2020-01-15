@@ -39,22 +39,22 @@
                 android:orientation="vertical">
 
                 <com.google.android.material.textfield.TextInputLayout
-                    android:id="@+id/layout_input_kritik"
+                    android:id="@+id/layout_input_to"
                     style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
                     android:layout_width="match_parent"
-                    android:layout_height="200dp"
+                    android:layout_height="wrap_content"
                     android:layout_marginStart="20dp"
                     android:layout_marginTop="20dp"
                     android:layout_marginEnd="20dp"
                     android:layout_marginBottom="20dp"
                     android:layout_weight="1"
-                    android:hint="Kritik"
+                    android:hint="To"
                     app:boxCornerRadiusTopEnd="10dp"
                     app:boxStrokeColor="@color/ungu"
                     app:hintTextColor="@color/ungu">
 
                     <com.google.android.material.textfield.TextInputEditText
-                        android:id="@+id/input_kritik"
+                        android:id="@+id/input_to"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:gravity="top"
@@ -69,7 +69,35 @@
 
 
                 <com.google.android.material.textfield.TextInputLayout
-                    android:id="@+id/layout_input_saran"
+                    android:id="@+id/layout_input_subject"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginBottom="20dp"
+                    android:layout_weight="1"
+                    android:hint="Subject"
+                    app:boxCornerRadiusTopEnd="10dp"
+                    app:boxStrokeColor="@color/ungu"
+                    app:hintTextColor="@color/ungu">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/input_subject"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="top"
+                        android:inputType="textMultiLine"
+                        android:overScrollMode="always"
+                        android:scrollbarStyle="insideInset"
+                        android:scrollbars="vertical"
+                        android:textColor="@color/ungu" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/layout_input_kritikSaran"
                     style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
                     android:layout_width="match_parent"
                     android:layout_height="200dp"
@@ -77,13 +105,13 @@
                     android:layout_marginEnd="20dp"
                     android:layout_marginBottom="20dp"
                     android:layout_weight="1"
-                    android:hint="Saran"
+                    android:hint="Kritik dan saran"
                     app:boxCornerRadiusTopEnd="10dp"
                     app:boxStrokeColor="@color/ungu"
                     app:hintTextColor="@color/ungu">
 
                     <com.google.android.material.textfield.TextInputEditText
-                        android:id="@+id/input_saran"
+                        android:id="@+id/input_kritikSaran"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:gravity="top"
@@ -97,6 +125,7 @@
 
 
                 <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btn_kirim"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_marginStart="20dp"
@@ -105,7 +134,8 @@
                     android:layout_marginBottom="20dp"
                     android:layout_weight="1"
                     android:text="KIRIM"
-                    app:cornerRadius="20dp" />
+                    app:backgroundTint="@color/biruB"
+                    app:cornerRadius="12dp" />
 
 
             </LinearLayout>

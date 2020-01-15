@@ -25,8 +25,10 @@ class PilihanActivity : AppCompatActivity() {
         val namaMu = mAuth.currentUser!!.uid
         val nimMu = mAuth.currentUser!!.uid
 
+
         getProfile(namaMu)
         getNim(nimMu)
+
 
         btn_kritikSaran.setOnClickListener {
             startActivity(Intent(this, KritikSaran::class.java))
@@ -47,6 +49,8 @@ class PilihanActivity : AppCompatActivity() {
 
 
     }
+
+
 
     private fun getProfile (userIdKu: String){
         Log.d("AKUNKU",userIdKu)
